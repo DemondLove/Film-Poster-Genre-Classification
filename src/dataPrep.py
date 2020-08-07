@@ -81,3 +81,20 @@ def convertGenreVariable(df):
                                 , num_classes=6)
 
     return primaryGenre
+
+
+def reshapeTestDataset(test_x):
+    '''
+    Reshape 3D test_x array into 4D array
+
+    Parameters:
+    test_x (np.array) - 3D array of testing independent variable
+
+    Results:
+    test_sample (np.array) - Updated 4D array of testing independent variable
+    '''
+    print('src.dataPrep.reshapeTestDataset')
+
+    test_sample = test_x.reshape((len(test_x),) + test_x[0].shape)
+
+    return test_sample
