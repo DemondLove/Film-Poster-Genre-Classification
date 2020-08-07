@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Additional files
+__pycache__
+CNNApp.ipynb
+posterArray.npy
+df.csv
