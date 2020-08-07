@@ -17,19 +17,19 @@ def buildModel():
 
     model.add(Conv2D(32, kernel_size=(3, 3), activation='relu', input_shape=(268, 182, 3)))
 
-    #model.add(BatchNormalization())
+    model.add(BatchNormalization())
 
     model.add(MaxPooling2D(pool_size=(2, 2)))
 
     model.add(SeparableConv2D(64, kernel_size=(3, 3), activation='relu'))
 
-    #model.add(BatchNormalization())
+    model.add(BatchNormalization())
 
     model.add(MaxPooling2D(pool_size=(2, 2)))
 
     model.add(SeparableConv2D(128, kernel_size=(3, 3), activation='relu'))
 
-    #model.add(BatchNormalization())
+    model.add(BatchNormalization())
 
     model.add(Flatten())
 
