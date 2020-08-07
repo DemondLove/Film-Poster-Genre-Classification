@@ -4,9 +4,9 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv2D, SeparableConv2D, MaxPooling2D, BatchNormalization
 
-def developModel():
+def buildModel():
     '''
-    Develop Convolutional Neural Network for MultiClassification
+    Build Convolutional Neural Network for MultiClassification Architecture
 
     Returns:
     model (Keras object) - CNN model
@@ -25,7 +25,7 @@ def developModel():
 
     model.add(SeparableConv2D(128, kernel_size=(3, 3), activation='relu'))
 
-    model.add(BatchNormalization())
+    #model.add(BatchNormalization())
 
     model.add(Flatten())
 
