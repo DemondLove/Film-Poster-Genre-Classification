@@ -130,6 +130,5 @@ dmypy.json
 
 # Additional files
 __pycache__
-CNNApp.ipynb
 posterArray.npy
 df.csv
